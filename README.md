@@ -1,10 +1,10 @@
 # Telecom Churn Dataset
 
 ## Overview
-The Telecom Churn Dataset contains information about a telecom company's customers and their behavior, which can be used to predict whether a customer will churn (leave the company) or not. This dataset is valuable for building predictive models to identify at-risk customers and devise retention strategies.
+The Telecom Churn Dataset contains information about a telecom company's customers and their behaviour, which can be used to predict whether a customer will churn (leave the company) or not. This dataset is valuable for building predictive models to identify at-risk customers and devise retention strategies.
 
 ## Dataset Description
-The dataset includes various customer attributes such as demographics, account information, and usage patterns. Each row represents a customer, and each column represents a customer attribute or a behavioral metric.
+The dataset includes various customer attributes such as demographics, account information, and usage patterns. Each row represents a customer, and each column represents a customer attribute or a behavioural metric.
 
 ### Columns
 - **customerID**: Unique identifier for each customer.
@@ -17,7 +17,7 @@ The dataset includes various customer attributes such as demographics, account i
 - **MultipleLines**: Indicates if the customer has multiple lines (Yes, No, No phone service).
 - **InternetService**: Customer's internet service provider (DSL, Fiber optic, No).
 - **OnlineSecurity**: Indicates if the customer has online security (Yes, No, No internet service).
-- **OnlineBackup**: Indicates if the customer has online backup (Yes, No, No internet service).
+- **OnlineBackup**: Indicates if the customer has online backup (Yes, No, No Internet Service).
 - **DeviceProtection**: Indicates if the customer has device protection (Yes, No, No internet service).
 - **TechSupport**: Indicates if the customer has tech support (Yes, No, No internet service).
 - **StreamingTV**: Indicates if the customer has streaming TV (Yes, No, No internet service).
@@ -53,10 +53,14 @@ Normalize or standardize numerical features to bring them to a common scale.
 ## Usage
 1. Load the dataset into a Pandas DataFrame.
 2. Perform EDA to understand the data.
-3. Preprocess the data (handle missing values, encode categorical variables, scale features).
+3. Preprocess the data (handle missing values, encode categorical variables, and scale features).
 4. Split the data into training and testing sets.
 5. Train machine learning models and evaluate their performance.
 6. Use the best-performing model to make predictions on new data.
+
+
+**Feel free to modify the sections to better fit your specific dataset and use case better. This README provides a comprehensive overview, including dataset description, preparation steps, analysis and modelling suggestions, usage instructions, and sample code.**
+
 
 ## Sample Code
 ```python
@@ -100,7 +104,3 @@ y_pred = model.predict(X_test)
 # Evaluate the model
 print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
-
-
-
-**Feel free to modify the sections to better fit your specific dataset and use case. This README provides a comprehensive overview, including dataset description, preparation steps, analysis and modeling suggestions, usage instructions, and sample code.**
